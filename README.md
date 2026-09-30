@@ -31,5 +31,5 @@ python3 -m http.server 8000   # then open http://localhost:8000
 GitHub repo settings > Pages > Deploy from branch `main` / root.
 
 ## To confirm before launch
-- `contact.email` and the Formspree form ID are currently Hammad's; replace with a company address.
+- Contact email is neuralbytea@gmail.com; Hammad Ali is listed as representative. The Formspree form ID is still Hammad's account (submissions go to his inbox); create a NeuralBytea form to change that.
 - App prices and edition labels come from the manifests; check them against the store pages.

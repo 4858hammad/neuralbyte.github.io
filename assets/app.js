@@ -177,7 +177,7 @@
       const banner = document.createElement('div');
       banner.setAttribute('role', 'alert');
       banner.style.cssText = 'background:#fdecec; color:#8a1c1c; text-align:center; padding:12px; font-size:13px;';
-      banner.textContent = 'Some content could not be loaded. Email hammadali4858@gmail.com.';
+      banner.textContent = 'Some content could not be loaded. Email neuralbytea@gmail.com.';
       document.body.prepend(banner);
       return;
     }
