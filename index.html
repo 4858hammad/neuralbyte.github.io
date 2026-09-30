@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NeuralBytea | Odoo 18 Apps & Custom Odoo Development</title>
+  <meta name="description" content="17 Odoo 18 apps on the Odoo Apps Store: vendor, customer and employee portals, payment providers, HR and payroll tools, dashboards and backend UI. Custom Odoo development.">
+  <link rel="canonical" href="https://neuralbytea.github.io/">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="author" content="NeuralBytea">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="NeuralBytea">
+  <meta property="og:title" content="NeuralBytea | Odoo 18 Apps & Custom Odoo Development">
+  <meta property="og:description" content="17 Odoo 18 apps on the Odoo Apps Store: vendor, customer and employee portals, payment providers, HR and payroll tools, dashboards and backend UI. Custom Odoo development.">
+  <meta property="og:url" content="https://neuralbytea.github.io/">
+  <meta property="og:image" content="https://neuralbytea.github.io/assets/images/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="NeuralBytea | Odoo 18 Apps & Custom Odoo Development">
+  <meta name="twitter:description" content="17 Odoo 18 apps on the Odoo Apps Store: vendor, customer and employee portals, payment providers, HR and payroll tools, dashboards and backend UI. Custom Odoo development.">
+  <meta name="twitter:image" content="https://neuralbytea.github.io/assets/images/og-cover.png">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="assets/style.css">
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+  <script defer src="assets/app.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div id="nav-container"></div>
+    <div class="hero">
+      <div class="hero-copy">
+        <div class="hero-badge"><span class="dot"></span>17 apps live on the Odoo Apps Store</div>
+        <div class="hero-tag" id="hero-tag">Odoo apps · Portals · Payments · Custom development</div>
+        <h1 id="hero-title">Odoo apps that <em>empower</em><br/>your team and customers.</h1>
+        <p id="hero-desc">NeuralBytea builds production-ready Odoo 18 apps: vendor, customer and employee portals, payment providers, HR and payroll tools, dashboards and backend UI upgrades. Install from the store, or talk to us about custom development.</p>
+        <div class="btn-row" id="btn-row">
+          <a href="apps.html" class="btn-primary">Browse the apps</a>
+          <a href="https://apps.odoo.com/apps/browse?repo_maintainer_id=1172096" target="_blank" rel="noopener" class="btn-outline">Odoo Apps Store ↗</a>
+          <a href="contact.html" class="btn-outline">Talk to us →</a>
+        </div>
+        <div class="hero-trust">
+          <span>Odoo 18</span>
+          <span>Community &amp; Enterprise</span>
+          <span>OPL-1 licensed</span>
+        </div>
+      </div>
+      <div class="code-card" aria-hidden="true">
+        <div class="code-bar"><i></i><i></i><i></i><span>timesheet_line.py — illustrative</span></div>
+<pre><span class="c"># Rate card → billing amount, cost and margin per line</span>
+<span class="k">class</span> <span class="f">AnalyticLine</span>(models.Model):
+    _inherit = <span class="s">'account.analytic.line'</span>
+
+    <span class="k">def</span> <span class="f">_compute_margin</span>(self):
+        <span class="k">for</span> line <span class="k">in</span> self:
+            rate = line._find_rate_card()
+            line.billing_amount = line.unit_amount * rate.billing
+            line.cost_amount = line.unit_amount * rate.cost
+            line.margin = line.billing_amount - line.cost_amount<span class="cursor"></span></pre>
+      </div>
+    </div>
+
+    <div class="stats-row" id="stats-container"></div>
+
+    <div class="section">
+      <div class="sec-header reveal">
+        <div>
+          <span class="eyebrow">Product lines</span>
+          <h2 class="sec-title">Five families of Odoo apps</h2>
+          <p class="sec-sub">Each app is built for a specific job and works out of the box after install.</p>
+        </div>
+        <a href="apps.html" class="see-all">See all →</a>
+      </div>
+      <div class="svc-grid">
+        <div class="svc reveal" onclick="location.href='apps.html'"><div class="svc-ico">🌐</div><h3>Portals</h3><p>Vendor, customer, employee and field-sales portals, plus a portal sidebar. Self-service without extra user seats.</p></div>
+        <div class="svc reveal" onclick="location.href='apps.html'"><div class="svc-ico">💳</div><h3>Payments</h3><p>Mastercard MPGS Hosted Checkout with 3-D Secure and automatic invoice reconciliation.</p></div>
+        <div class="svc reveal" onclick="location.href='apps.html'"><div class="svc-ico">👥</div><h3>HR &amp; Payroll</h3><p>Employee loans with payroll deduction, and an attendance and leave Gantt with remote-work tracking.</p></div>
+        <div class="svc reveal" onclick="location.href='apps.html'"><div class="svc-ico">📊</div><h3>Dashboards</h3><p>Owl dashboards for sales, invoices, payments and payroll, with Excel and PDF reports.</p></div>
+        <div class="svc reveal" onclick="location.href='apps.html'"><div class="svc-ico">🧩</div><h3>Backend UI</h3><p>AI list search, split view, chatter workspace, home menu and sidebar navigation.</p></div>
+        <div class="svc reveal" onclick="location.href='contact.html'"><div class="svc-ico">🛠</div><h3>Custom development</h3><p>Need something else? We build custom Odoo modules, portals and integrations.</p></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="sec-header reveal">
+        <div>
+          <span class="eyebrow">Featured apps</span>
+          <h2 class="sec-title">Most-used starting points</h2>
+          <p class="sec-sub">Portals, payments and payroll tools our customers start with.</p>
+        </div>
+        <a href="apps.html" class="see-all">All 17 apps →</a>
+      </div>
+      <div class="proj-grid" id="featured-grid"></div>
+    </div>
+
+    <div class="marquee" aria-label="Technologies">
+      <div class="marquee-track">
+        <span>Odoo 18</span><span>Python</span><span>OWL</span><span>JavaScript</span><span>PostgreSQL</span><span>QWeb</span><span>Portals</span><span>Payments</span><span>HR &amp; Payroll</span><span>Accounting</span><span>Purchase</span><span>Sales</span>
+        <span>Odoo 18</span><span>Python</span><span>OWL</span><span>JavaScript</span><span>PostgreSQL</span><span>QWeb</span><span>Portals</span><span>Payments</span><span>HR &amp; Payroll</span><span>Accounting</span><span>Purchase</span><span>Sales</span>
+      </div>
+    </div>
+
+    <div class="section" id="hire">
+      <div class="sec-header reveal">
+        <div>
+          <span class="eyebrow">Work with us</span>
+          <h2 class="sec-title">Apps, custom work and support</h2>
+        </div>
+      </div>
+      <div class="hire-mount"></div>
+    </div>
+
+    <div class="cta-band reveal">
+      <h2>Need an Odoo app <span class="grad-text">built or customised?</span></h2>
+      <p>Send a short note about what you need and we will reply with how we would approach it.</p>
+      <div class="btn-row">
+        <a href="contact.html" class="btn-primary">Contact us</a>
+        <a href="https://apps.odoo.com/apps/browse?repo_maintainer_id=1172096" target="_blank" rel="noopener" class="btn-outline">Odoo Apps Store ↗</a>
+      </div>
+    </div>
+
+    <div class="footer" id="footer-container"></div>
+  </div>
+  <noscript>
+    <div class="container">
+      <h2>NeuralBytea: Odoo 18 apps and custom development</h2>
+      <p>17 apps on the Odoo Apps Store: Vendor Portal Pro, Customer Portal Pro, Field Sales Booking, Services Billing Pro, Employee Self Service, Portal Sidebar Pro, Mastercard MPGS Payment, Employee Loan Pro, Attendance Leave Gantt, Payroll Dashboard Pro, Sales &amp; Payment Dashboard, Smart List Search Pro, Chatter Workspace Pro, Split View Pro, Home Menu Enterprise UI, Sidebar App Navigation and Web UI Extensions.</p>
+      <p><a href="https://apps.odoo.com/apps/browse?repo_maintainer_id=1172096">Browse on the Odoo Apps Store</a></p>
+    </div>
+  </noscript>
+</body>
+</html>

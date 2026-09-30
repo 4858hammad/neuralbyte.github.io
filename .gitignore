@@ -1,0 +1,25 @@
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Editor settings
+.idea/
+.vscode/
+*.idea
+
+# Logs and temp files
+*.log
+*.tmp
+*.swp
+*.swo
+*.bak
+*.orig
+
+.codex
+
+# Local caches
+.cache/
+node_modules/
+
+# Note: tracked files that already exist in the repo and match ignore rules
+# will still be pushed until they are removed from the Git index.

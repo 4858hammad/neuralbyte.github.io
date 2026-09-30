@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Contact NeuralBytea | Odoo Apps & Custom Development</title>
+  <meta name="description" content="Questions about a NeuralBytea Odoo app, or need custom Odoo development? Send us a message.">
+  <link rel="canonical" href="https://neuralbytea.github.io/contact.html">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="author" content="NeuralBytea">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="NeuralBytea">
+  <meta property="og:title" content="Contact NeuralBytea | Odoo Apps &amp; Custom Development">
+  <meta property="og:description" content="Questions about a NeuralBytea Odoo app, or need custom Odoo development? Send us a message.">
+  <meta property="og:url" content="https://neuralbytea.github.io/contact.html">
+  <meta property="og:image" content="https://neuralbytea.github.io/assets/images/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contact NeuralBytea | Odoo Apps &amp; Custom Development">
+  <meta name="twitter:description" content="Questions about a NeuralBytea Odoo app, or need custom Odoo development? Send us a message.">
+  <meta name="twitter:image" content="https://neuralbytea.github.io/assets/images/og-cover.png">
+
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <link rel="stylesheet" href="assets/style.css">
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+  <script defer src="assets/app.js"></script>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Dynamic Navigation Header -->
+    <div id="nav-container"></div>
+
+    <!-- Contact Page Header -->
+    <div class="cph">
+      <div class="cbc">Home / <em>Contact</em></div>
+      <h1 style="font-size:22px; font-weight:700; color:var(--color-text-primary); margin-bottom:4px;">Contact NeuralBytea</h1>
+      <p style="font-size:13px; color:var(--color-text-secondary);">Questions about an app, a bug report, or a custom Odoo project.</p>
+    </div>
+
+    <div class="hire-mount" style="margin-top:22px;"></div>
+
+    <!-- Form & Info grid container -->
+    <div class="cform">
+      <!-- Contact Info Left Cards -->
+      <div class="cinfo">
+        <div class="avail">
+          <div class="dot" id="avail-dot"></div>
+          <span id="avail-text">Taking new projects</span>
+        </div>
+        
+        <div class="cinfo-card">
+          <div class="cicon">✉</div>
+          <div>
+            <div class="clabel">Email</div>
+            <div class="cval" id="email-val"><a href="mailto:hammadali4858@gmail.com">hammadali4858@gmail.com</a></div>
+          </div>
+        </div>
+        
+        <div class="cinfo-card">
+          <div class="cicon">🐙</div>
+          <div>
+            <div class="clabel">GitHub</div>
+            <div class="cval" id="github-val"><a href="https://github.com/neuralbytea" target="_blank" rel="noopener">github.com/neuralbytea</a></div>
+          </div>
+        </div>
+        
+        <div class="cinfo-card">
+          <div class="cicon">📍</div>
+          <div>
+            <div class="clabel">Location</div>
+            <div class="cval" id="location-val">Lahore, Pakistan (remote)</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Message Form Right Card -->
+      <div class="cfright">
+        <div style="font-size:15px; font-weight:700; color:var(--color-text-primary); margin-bottom:4px;">Send a message</div>
+        <div style="font-size:12px; color:var(--color-text-secondary); margin-bottom:14px;">We will reply by email.</div>
+        
+        <form id="contact-form" action="https://formspree.io/f/mzdwrpyp" method="POST">
+          <div class="field-lbl">Your name</div>
+          <input type="text" name="name" class="field-input" placeholder="e.g. John Doe" required>
+          
+          <div class="field-lbl">Email address</div>
+          <input type="email" name="_replyto" class="field-input" placeholder="email@example.com" required>
+          
+          <div class="field-lbl">Subject</div>
+          <input type="text" name="subject" class="field-input" placeholder="e.g. Question about Vendor Portal Pro" required>
+          
+          <div class="field-lbl">Message</div>
+          <textarea name="message" class="field-input tall" placeholder="Write your message here..." required></textarea>
+          
+          <!-- Honeypot spam trap: hidden from humans, filled by bots -->
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute; left:-9999px; width:1px; height:1px; opacity:0;">
+
+          <!-- Submit Button -->
+          <button type="submit" class="send-btn">Send message →</button>
+          
+          <!-- Status Feedback Toast Message Container -->
+          <div class="form-status" id="form-status-msg"></div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Shared Footer -->
+    <div class="footer" id="footer-container"></div>
+  </div>
+</body>
+</html>
